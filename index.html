@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jepsu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <script type="module" src="js/main.js"></script>
 </head>
@@ -12,8 +15,33 @@
     <h1>Jepsu</h1>
     <p>Developer · Maker</p>
 
-    <div class="links">
-      <a class="btn" href="/WikiHop/" target="_blank">WikiHop</a>
+    <!-- Tab Navigation -->
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="projects">Projects</button>
+      <button class="tab-btn" data-tab="links">Links</button>
+    </nav>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="projects">
+        <div class="links">
+          <a class="btn" href="/WikiHop/" target="_blank">WikiHop</a>
+        </div>
+      </div>
+      
+      <div class="tab-pane" id="links">
+        <div class="social-links">
+          <a class="social-btn" href="https://github.com/jjepaah" target="_blank">
+            <span class="icon">→</span> GitHub
+          </a>
+          <a class="social-btn" href="https://x.com/jjepaa" target="_blank">
+            <span class="icon">→</span> X
+          </a>
+          <a class="social-btn" href="https://www.twitch.tv/jjepaah" target="_blank">
+            <span class="icon">→</span> Twitch
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </body>
